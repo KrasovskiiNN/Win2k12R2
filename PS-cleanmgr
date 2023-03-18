@@ -1,4 +1,11 @@
+#Disk Cleanup for Windows Server 2012 R2
+#Start after System Install and Update
+
+#Copy files to work directory
+
 Copy-Item -Path "F:\cleanmgr.exe" -Destination "C:\Windows\System32\cleanmgr.exe" -Force
 Copy-Item -Path "F:\cleanmgr.exe.mui" -Destination "C:\Windows\System32\en-US\cleanmgr.exe.mui" -Force
 
-Start-Process -FilePath “C:\Windows\System32\cleanmgr.exe”
+#Start Disk Cleanup
+
+Start-Process -FilePath “C:\Windows\System32\cleanmgr.exe” -ArgumentList "/d C: /VERYLOWDISK" Hidden -Wait
