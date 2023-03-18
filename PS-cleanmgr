@@ -8,4 +8,4 @@ Copy-Item -Path "F:\cleanmgr.exe.mui" -Destination "C:\Windows\System32\en-US\cl
 
 #Start Disk Cleanup
 
-Start-Process -FilePath “C:\Windows\System32\cleanmgr.exe” -ArgumentList "/d C: /LOWDISK" -WindowStyle "Hidden" -Wait
+Start-Process -FilePath “C:\Windows\System32\cleanmgr.exe” -ArgumentList "/d C: /VERYLOWDISK" -WindowStyle "Hidden" -Wait
