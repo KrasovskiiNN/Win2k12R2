@@ -3,8 +3,8 @@
 
 #Copy files to work directory
 
-Copy-Item -Path "F:\cleanmgr.exe" -Destination "C:\Windows\System32\cleanmgr.exe" -Force
-Copy-Item -Path "F:\cleanmgr.exe.mui" -Destination "C:\Windows\System32\en-US\cleanmgr.exe.mui" -Force
+Copy-Item -Path "F:\cleanmgr.exe" -Destination "C:\Windows\System32\cleanmgr.exe" -Recurse -Force
+Copy-Item -Path "F:\cleanmgr.exe.mui" -Destination "C:\Windows\System32\en-US\cleanmgr.exe.mui" -Recurse -Force
 
 #Start Disk Cleanup
 
